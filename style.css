@@ -1,0 +1,107 @@
+/* Document styling */
+body {
+  background-color: #eee;
+  font-family: helvetica, sans-serif;
+  font-weight: 100;
+}
+
+#wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#chart {
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  width: 610px;
+  /*margin: 25px auto;*/
+}
+
+#dataInfo {
+  position: absolute;
+  top: 120px;
+  left: 750px;
+  width: 300px;
+  /*margin: 25px auto;*/
+}
+
+#geneView {
+  position: absolute;
+  top: 120px;
+  left: 610px;
+  width: 140px;
+  float: left;
+  height: 500px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#title {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-size: 16px;
+  letter-spacing: -2px;
+  line-height: 100%;
+}
+
+#lineSelector { 
+  position: absolute;
+  top: 70px;
+  left: 30px;
+}
+
+#chartTitle {
+  position: absolute;
+  top: 65px;
+  left: 200px;
+  width: 900px;
+}
+
+#menu2 {
+  position: absolute;
+  top: 120px;
+  left: 30px;
+  width: 120px;
+  height: 340px;
+  float: left;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+
+li, h1, h2 {
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 11px;
+  margin: 0;
+  color: #666;
+}
+
+ul {
+  list-style: none;
+  font-size: 12px;
+  padding: 0;
+  margin-top: 3px;
+}
+
+li {
+  cursor: pointer;
+  padding-bottom: 2px;
+}
+
+li:hover {
+  color: red;
+}
+
+li.preview {
+  font-weight: 400;
+}
+
+li.selected {
+  font-weight: bold;
+}

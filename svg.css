@@ -1,0 +1,36 @@
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+/*
+.objects {
+	cursor:move;
+}
+*/			
+
+.axis path,
+.axisLine {
+    fill: none;
+    stroke:rgba(0,0,0,0.2);
+    stroke-width:2px;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+.axis tspan {
+  font-size: 9px;
+}
+
+
+#xAxisLbl text, #yAxisLbl text {
+	font-family: sans-serif;
+    font-size: 20px;
+}
+
+

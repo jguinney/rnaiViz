@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>RNAi Viz</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="svg.css">
+		<script type="text/javascript" src="./d3.v3.js"></script>
+		
+	</head>
+	<body onload="updateChart()">
+		<div id="chartTitle">
+		</div>
+		<!--
+		<div id="lineSelector">
+			Treated line <input type="text" id="treatedLine" value=".74" size="3"/>
+			Untreated line <input type="text" id="untreatedLine" value="1" size="3"/>
+			Fold line <input type="text" id="foldLine" value=".74" size="3"/>
+		</div>
+	-->
+		<div id="menu2">
+			<ul id="disease-menu"></ul>
+		</div>
+		
+		<div id="wrapper">
+			<div id="chart"></div>
+			<div id="title">
+				<h1>RNAiViz</h1>
+			</div>
+			<div id="geneView">
+				<ul id="hitList"></ul>
+			</div>
+			<div id="dataInfo">
+				<table>
+					<tr><td>Gene</td><td id="geneName"></td></tr>
+					<tr><td>Fold change</td><td id="foldChange"/></td></tr>
+					<tr><td>Pvalue</td><td id="pvalue"/></td></tr>
+					<tr><td>Mut %</td><td id="mut"/></td></tr>
+					<tr><td>Amp %</td><td id="amp"/></td></tr>
+					<tr><td>Del %</td><td id="del"/></td></tr>
+				</table>
+				<textarea id="geneHighlight" rows="5" cols="40"></textarea>
+				
+				<a id="DoGeneHighlight">Highlight genes </a>
+				<p/>
+				<table>
+					<tr><td>Fold change</td><td><input type="text" id="foldThreshold" value="100"/></td></tr>
+					<tr><td>Pvalue</td><td><input type="text" id="pvalueThreshold" value="1"/></td></tr>
+					<tr><td>Mut %</td><td><input type="text" id="mutThreshold" value="100"/></td></tr>
+					<tr><td>Amp %</td><td><input type="text" id="ampThreshold" value="100"/></td></tr>
+					<tr><td>Del %</td><td><input type="text" id="delThreshold" value="100"/></td></tr>
+				</table>
+				<a id="DoGeneFilters">Apply filters</a>
+			</div>
+	
+			<script src="screenViz.js"></script>
+			<script src="scatterView.js"></script>
+		</div>
+	</body>
+</html>
